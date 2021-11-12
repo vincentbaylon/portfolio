@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 function NavBar() {
 	return (
@@ -7,28 +8,86 @@ function NavBar() {
 				className='mx-2 text-2xl font-medium hover:text-indigo-500 flex-1'
 				to='/'
 			>
-				VB
-			</Link>
-			<Link className='mx-5 text-base font-normal hover:text-indigo-500' to='/'>
-				MAIN
+				<motion.div
+					initial={{ x: -1000 }}
+					animate={{ x: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 0,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					VB
+				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
+				to='/'
+			>
+				<motion.div
+					initial={{ y: -1000 }}
+					animate={{ y: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 0.1,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					MAIN
+				</motion.div>
+			</Link>
+			<Link
+				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
 				to='/about'
 			>
-				ABOUT
+				<motion.div
+					initial={{ y: -1000 }}
+					animate={{ y: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 0.2,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					ABOUT
+				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
 				to='/projects'
 			>
-				PROJECTS
+				<motion.div
+					initial={{ y: -1000 }}
+					animate={{ y: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 0.3,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					PROJECTS
+				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
 				to='/contact'
 			>
-				CONTACT
+				<motion.div
+					initial={{ y: -1000 }}
+					animate={{ y: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 0.4,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					CONTACT
+				</motion.div>
 			</Link>
 		</header>
 	)
