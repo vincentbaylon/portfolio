@@ -8,7 +8,7 @@ function ProjectCard({ image, name, main, repo, handleClick, setProject }) {
 		<>
 			<div className='group flex justify-center items-center'>
 				<button
-					className='h-16 w-16 rounded-lg absolute hidden group-hover:block bg-teal-500 z-50 justify-center'
+					className='h-16 w-16 rounded-full absolute hidden group-hover:block bg-teal-500 z-50 justify-center'
 					onClick={projectClick}
 				>
 					<h1 className='text-md font-medium text-white'>View Project</h1>
