@@ -7,7 +7,7 @@ function NavBar() {
 	return (
 		<header className='p-1 w-full h-12 flex items-center font-semibold text-2xl'>
 			<Link
-				className='mx-2 text-2xl font-medium hover:text-indigo-500 flex-1'
+				className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
 				to='/'
 			>
 				<motion.div
@@ -24,7 +24,7 @@ function NavBar() {
 				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
 				to='/'
 			>
 				<motion.div
@@ -41,7 +41,7 @@ function NavBar() {
 				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
 				to='/about'
 			>
 				<motion.div
@@ -58,7 +58,7 @@ function NavBar() {
 				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
 				to='/projects'
 			>
 				<motion.div
@@ -75,7 +75,7 @@ function NavBar() {
 				</motion.div>
 			</Link>
 			<Link
-				className='mx-5 text-base font-normal text-gray-500 hover:text-indigo-500'
+				className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
 				to='/contact'
 			>
 				<motion.div

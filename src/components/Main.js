@@ -18,12 +18,12 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.3,
+						duration: 0.2,
 						repeat: false,
 					}}
 				>
 					<motion.div whileHover={{ scale: 1.5 }}>
-						<span className='ml-1' key={i}>
+						<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
 							{e}
 						</span>
 					</motion.div>
@@ -42,12 +42,12 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.3,
+						duration: 0.2,
 						repeat: false,
 					}}
 				>
 					<motion.div whileHover={{ scale: 1.5 }}>
-						<span className={e === 'D' ? 'ml-2' : 'ml-1'} key={i}>
+						<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
 							{e}
 						</span>
 					</motion.div>
@@ -72,7 +72,7 @@ function Main() {
 							type: 'spring',
 							bounce: 0.5,
 							delay: 1.6,
-							duration: 0.3,
+							duration: 0.2,
 							repeat: false,
 						}}
 					>
@@ -91,7 +91,7 @@ function Main() {
 			<h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
 				<div className='flex flex-row'>{displayStrTwo}</div>
 			</h1>
-			<span className='my-4 mx-1'>
+			<span className='mt-10 mx-1'>
 				<motion.div
 					initial={{ x: -1000 }}
 					animate={{ x: 0 }}
@@ -103,7 +103,7 @@ function Main() {
 					}}
 				>
 					<button
-						className='mb-10 border-2 bg-indigo-500 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400'
+						className='mb-10 border-2 bg-teal-500 text-white text-xl rounded-md py-2 px-4 hover:bg-gray-400 shadow-md'
 						onClick={handleClick}
 					>
 						Contact me
