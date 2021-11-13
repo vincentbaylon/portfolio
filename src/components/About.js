@@ -39,7 +39,7 @@ function About() {
 
 	return (
 		<div className='h-5/6 m-5 lg:m-auto flex flex-col md:m-auto md:justify-center lg:justify-center w-full sm:w-11/12 md:w-10/12 lg:w-9/12'>
-			<h1 className='my-5 lg:mx-9 text-2xl md:text-4xl lg:text-5xl font-semibold'>
+			<h1 className='my-5 lg:mx-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold'>
 				<div className='flex flex-row'>{displayStr}</div>
 			</h1>
 			<div className='lg:mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  justify-center'>

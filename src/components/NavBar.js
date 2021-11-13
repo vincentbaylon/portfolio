@@ -5,7 +5,7 @@ function NavBar() {
 	const navigate = useNavigate()
 
 	return (
-		<header className='p-1 w-full h-12 flex items-center font-semibold text-2xl'>
+		<header className='p-1 w-full h-12 flex items-center font-semibold text-2xl sticky top-0 z-50 bg-white'>
 			<Link
 				className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
 				to='/'
