@@ -20,7 +20,7 @@ function Projects() {
 			<h1 className='text-3xl lg:ml-20 2xl:ml-80 sm:text-4xl md:text-5xl lg:text-6xl font-bold text-left'>
 				Projects
 			</h1>
-			<div className='gap-4 lg:mx-20 2xl:mx-80 grid md:grid-cols-2 lg:grid-cols-3'>
+			<div className='lg:mx-20 2xl:mx-80 grid md:grid-cols-2 lg:grid-cols-3'>
 				{displayProjects}
 			</div>
 		</div>

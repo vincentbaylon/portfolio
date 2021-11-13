@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 function NavBar() {
+	const navigate = useNavigate()
+
 	return (
 		<header className='p-1 w-full h-12 flex items-center font-semibold text-2xl'>
 			<Link

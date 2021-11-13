@@ -1,10 +1,10 @@
 import Filler from './Filler'
 
-function ProgressBar({ percentage, label, color }) {
+function ProgressBar({ width, percentage, label, color }) {
 	return (
-		<div className='mb-10 h-2 w-full rounded-lg'>
+		<div className='mb-10 h-1 w-full rounded-lg'>
 			<p>{label}</p>
-			<Filler percentage={percentage} color={color} />
+			<Filler width={width} percentage={percentage} color={color} />
 		</div>
 	)
 }

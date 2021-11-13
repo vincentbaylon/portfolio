@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 function Main() {
+	const navigate = useNavigate()
 	const hiMessage = `Hi, I'm Vincent`
 	const devMessage = 'Full-Stack Developer'
 
@@ -16,7 +18,7 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.5,
+						duration: 0.3,
 						repeat: false,
 					}}
 				>
@@ -40,7 +42,7 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.5,
+						duration: 0.3,
 						repeat: false,
 					}}
 				>
@@ -54,8 +56,12 @@ function Main() {
 		)
 	})
 
+	const handleClick = () => {
+		navigate('/contact')
+	}
+
 	return (
-		<div className='h-5/6 m-auto mx-5 sm:mx-10 md:mx-20 lg:mx-48 2xl:mx-80 flex flex-col justify-center '>
+		<div className='h-5/6 m-auto mx-2 sm:mx-10 md:mx-20 lg:mx-48 2xl:mx-80 flex flex-col justify-center '>
 			<h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
 				<div className='flex flex-row'>
 					{displayStr}
@@ -66,7 +72,7 @@ function Main() {
 							type: 'spring',
 							bounce: 0.5,
 							delay: 1.6,
-							duration: 0.5,
+							duration: 0.3,
 							repeat: false,
 						}}
 					>
@@ -85,6 +91,25 @@ function Main() {
 			<h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
 				<div className='flex flex-row'>{displayStrTwo}</div>
 			</h1>
+			<span className='my-4 mx-1'>
+				<motion.div
+					initial={{ x: -1000 }}
+					animate={{ x: 0 }}
+					transition={{
+						type: 'spring',
+						delay: 3.5,
+						duration: 1,
+						repeat: false,
+					}}
+				>
+					<button
+						className='mb-10 border-2 bg-indigo-500 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400'
+						onClick={handleClick}
+					>
+						Contact me
+					</button>
+				</motion.div>
+			</span>
 		</div>
 	)
 }

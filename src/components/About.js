@@ -1,6 +1,14 @@
+import { useNavigate } from 'react-router-dom'
+
 import ProgressBar from './ProgressBar'
 
 function About() {
+	const navigate = useNavigate()
+
+	const handleClick = () => {
+		navigate('/contact')
+	}
+
 	return (
 		<div className='h-5/6 m-5 lg:m-auto flex flex-col md:m-auto md:justify-center lg:justify-center w-full sm:w-11/12 md:w-10/12 lg:w-9/12'>
 			<h1 className='my-5 lg:mx-10 text-2xl md:text-4xl lg:text-5xl font-semibold'>
@@ -22,16 +30,34 @@ function About() {
 						<br />
 						<br />
 					</p>
-					<button className='mb-10 border-2 bg-indigo-500 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400'>
+					<button
+						className='mb-10 border-2 bg-indigo-500 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400'
+						onClick={handleClick}
+					>
 						Contact me
 					</button>
 				</div>
 
 				<div className='lg:ml-10 w-full'>
-					<ProgressBar percentage='80' label='React' color='cyan' />
-					<ProgressBar percentage='60' label='Rails' color='red' />
-					<ProgressBar percentage='70' label='JavaScript' color='orange' />
-					<ProgressBar percentage='50' label='Ruby' color='indigo' />
+					<ProgressBar
+						width='100'
+						percentage='.80'
+						label='React'
+						color='cyan'
+					/>
+					<ProgressBar width='100' percentage='.60' label='Rails' color='red' />
+					<ProgressBar
+						width='100'
+						percentage='.70'
+						label='JavaScript'
+						color='orange'
+					/>
+					<ProgressBar
+						width='100'
+						percentage='.50'
+						label='Ruby'
+						color='indigo'
+					/>
 				</div>
 			</div>
 		</div>

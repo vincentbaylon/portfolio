@@ -8,7 +8,7 @@ import NavBar from './NavBar'
 
 function App() {
 	return (
-		<div className='p-0 m-0 h-screen bg-gray-100'>
+		<div className='p-0 m-0 h-screen'>
 			<NavBar />
 
 			<Routes>
