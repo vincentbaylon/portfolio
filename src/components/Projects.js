@@ -49,8 +49,8 @@ function Projects() {
 			return (
 				<div>
 					<motion.div
-						initial={{ x: -2000 }}
-						animate={{ x: 0 }}
+						initial={{ x: -500, opacity: 0 }}
+						animate={{ x: 0, opacity: [0, 1] }}
 						transition={{
 							type: 'spring',
 							delay: 0,
@@ -74,8 +74,8 @@ function Projects() {
 			return (
 				<div>
 					<motion.div
-						initial={{ y: -2000 }}
-						animate={{ y: 0 }}
+						initial={{ y: -500, opacity: 0 }}
+						animate={{ y: 0, opacity: [0, 1] }}
 						transition={{
 							type: 'spring',
 							delay: 0,
@@ -99,8 +99,8 @@ function Projects() {
 			return (
 				<div>
 					<motion.div
-						initial={{ x: 2000 }}
-						animate={{ x: 0 }}
+						initial={{ x: 500, opacity: 0 }}
+						animate={{ x: 0, opacity: [0, 1] }}
 						transition={{
 							type: 'spring',
 							delay: 0,
@@ -124,8 +124,8 @@ function Projects() {
 			return (
 				<div>
 					<motion.div
-						initial={{ x: -2000 }}
-						animate={{ x: 0 }}
+						initial={{ x: -500, opacity: 0 }}
+						animate={{ x: 0, opacity: [0, 1] }}
 						transition={{
 							type: 'spring',
 							delay: 0,
@@ -149,8 +149,8 @@ function Projects() {
 			return (
 				<div>
 					<motion.div
-						initial={{ y: 2000 }}
-						animate={{ y: 0 }}
+						initial={{ y: 500, opacity: 0 }}
+						animate={{ y: 0, opacity: [0, 1] }}
 						transition={{
 							type: 'spring',
 							delay: 0,

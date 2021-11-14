@@ -130,7 +130,7 @@ function Contact() {
 								name='name'
 								onChange={handleChange}
 								required
-								placeholder='Enter name'
+								placeholder='Enter your name*'
 								value={formData.name}
 							/>
 							<input
@@ -139,7 +139,7 @@ function Contact() {
 								name='email'
 								onChange={handleChange}
 								required
-								placeholder='Enter email'
+								placeholder='Enter your email*'
 								value={formData.email}
 							/>
 							<textarea
@@ -148,12 +148,14 @@ function Contact() {
 								name='message'
 								onChange={handleChange}
 								required
-								placeholder='Hi there!'
+								placeholder='Hi there!*'
 								value={formData.message}
 								rows='3'
 							/>
 							<span className='flex justify-end'>
-								<h1 className='mx-2 my-1 text-gray-400'>All fields required</h1>
+								<h1 className='mx-2 my-1 text-gray-400'>
+									*All fields required
+								</h1>
 								<button
 									className='mb-10 bg-teal-500 text-white text-md rounded-md py-1 px-4 hover:bg-gray-400'
 									type='submit'

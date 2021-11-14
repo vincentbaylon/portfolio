@@ -11,6 +11,7 @@ function Main() {
 		count += 0.1
 		return (
 			<>
+				{console.log(`${"'" === "'".toUpperCase()}`)}
 				<motion.div
 					initial={{ scale: 1, opacity: 0 }}
 					animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
@@ -62,7 +63,7 @@ function Main() {
 
 	return (
 		<div className='h-5/6 m-auto mx-2 sm:mx-10 md:mx-20 lg:mx-48 2xl:mx-80 flex flex-col justify-center '>
-			<h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
+			<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
 				<div className='flex flex-row'>
 					{displayStr}
 					<motion.div
@@ -88,7 +89,7 @@ function Main() {
 				</div>
 			</h1>
 			<br />
-			<h1 className='text-2xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
+			<h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-bold text-left'>
 				<div className='flex flex-row'>{displayStrTwo}</div>
 			</h1>
 			<span className='mt-10 mx-1'>

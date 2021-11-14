@@ -31,8 +31,8 @@ function Drawer({ handleClick }) {
 					to='/'
 				>
 					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
+						initial={{ x: 1000 }}
+						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
 							delay: 0.1,
@@ -48,8 +48,8 @@ function Drawer({ handleClick }) {
 					to='/about'
 				>
 					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
+						initial={{ x: 1000 }}
+						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
 							delay: 0.2,
@@ -65,8 +65,8 @@ function Drawer({ handleClick }) {
 					to='/projects'
 				>
 					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
+						initial={{ x: 1000 }}
+						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
 							delay: 0.3,
@@ -79,14 +79,31 @@ function Drawer({ handleClick }) {
 				</Link>
 				<Link
 					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/contact'
+					to='/blog'
 				>
 					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
+						initial={{ x: 1000 }}
+						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
 							delay: 0.4,
+							duration: 1,
+							repeat: false,
+						}}
+					>
+						BLOG
+					</motion.div>
+				</Link>
+				<Link
+					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
+					to='/contact'
+				>
+					<motion.div
+						initial={{ x: 1000 }}
+						animate={{ x: 0 }}
+						transition={{
+							type: 'spring',
+							delay: 0.5,
 							duration: 1,
 							repeat: false,
 						}}

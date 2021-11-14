@@ -26,7 +26,7 @@
 }
 
 .modal {
-	width: clamp(50%, 700px, 90%);
+	width: clamp(50%, 700px, 100%);
 	height: min(50%, 500px);
 
 	margin: auto;

@@ -54,7 +54,7 @@ function About() {
 						Hobbies are DJing, mountain biking, fitness and playing sports.
 						Faithful fan of SF 49ers, SF Giants and LA Lakers. Enjoy watching
 						boxing, MMA, MCU, The Office and Star Wars (Darth Bane needs a
-						trilogy).
+						trilogy!).
 						<br />
 						<br />
 					</p>
@@ -89,7 +89,7 @@ function About() {
 					<ProgressBar
 						width='100'
 						percentage='.60'
-						label='TailwindCSS'
+						label='TailwindCSS/MUI'
 						color='blue'
 					/>
 				</div>

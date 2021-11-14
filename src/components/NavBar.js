@@ -131,7 +131,7 @@ function NavBar() {
 				</Link>
 				<Link
 					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/contact'
+					to='/blog'
 				>
 					<motion.div
 						initial={{ y: -1000 }}
@@ -139,6 +139,23 @@ function NavBar() {
 						transition={{
 							type: 'spring',
 							delay: 0.4,
+							duration: 1,
+							repeat: false,
+						}}
+					>
+						BLOG
+					</motion.div>
+				</Link>
+				<Link
+					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
+					to='/contact'
+				>
+					<motion.div
+						initial={{ y: -1000 }}
+						animate={{ y: 0 }}
+						transition={{
+							type: 'spring',
+							delay: 0.5,
 							duration: 1,
 							repeat: false,
 						}}

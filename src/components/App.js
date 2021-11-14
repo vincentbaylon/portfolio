@@ -5,6 +5,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import Main from './Main'
 import NavBar from './NavBar'
+import Blog from './Blog'
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<Routes>
 				<Route exact path='/about' element={<About />} />
 				<Route exact path='/projects' element={<Projects />} />
+				<Route exact path='/blog' element={<Blog />} />
 				<Route exact path='/contact' element={<Contact />} />
 				<Route exact path='/' element={<Main />} />
 			</Routes>
