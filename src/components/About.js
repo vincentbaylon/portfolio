@@ -12,9 +12,9 @@ function About() {
 		<div className='h-5/6 flex flex-col py-10 md:py-20'>
 			<h1
 				id='about'
-				className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-amber-500'
+				className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-500 bg-gradient-to-r from-slate-700'
 			>
-				About Me
+				Get To Know Me
 			</h1>
 
 			<div className='p-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center gap-6'>

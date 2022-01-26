@@ -31,7 +31,7 @@ function Drawer({ handleClick }) {
 					to='/#top'
 				>
 					<motion.div
-						initial={{ x: 1000 }}
+						initial={{ x: 2000 }}
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
@@ -48,7 +48,7 @@ function Drawer({ handleClick }) {
 					to='/#about'
 				>
 					<motion.div
-						initial={{ x: 1000 }}
+						initial={{ x: 2000 }}
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
@@ -65,7 +65,7 @@ function Drawer({ handleClick }) {
 					to='/#projects'
 				>
 					<motion.div
-						initial={{ x: 1000 }}
+						initial={{ x: 2000 }}
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
@@ -83,7 +83,7 @@ function Drawer({ handleClick }) {
 					to='/#contact'
 				>
 					<motion.div
-						initial={{ x: 1000 }}
+						initial={{ x: 2000 }}
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',

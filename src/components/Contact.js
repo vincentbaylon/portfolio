@@ -90,7 +90,7 @@ function Contact() {
 			<div className='h-5/6 flex flex-col py-10 md:py-20'>
 				<h1
 					id='contact'
-					className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-amber-500 text-white'
+					className='p-2 my-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-500 bg-gradient-to-r from-slate-700'
 				>
 					Let's Connect!
 				</h1>
@@ -122,9 +122,9 @@ function Contact() {
 				</div>
 
 				<div className='flex flex-col items-center justify-center w-full'>
-					<div className='w-full md:w-1/2 p-2 rounded-md'>
+					<div className='w-full md:w-1/2 p-2 rounded-md bg-slate-500'>
 						<form className='w-full'>
-							<div className='mt-5 flex flex-col gap-4 justify-center'>
+							<div className='mt-2 flex flex-col gap-4 justify-center'>
 								<input
 									className='p-1 h-10 rounded-md'
 									id='name'
@@ -158,7 +158,7 @@ function Contact() {
 										*All fields required
 									</h1>
 									<button
-										className='mb-10 bg-sky-500 text-white text-md rounded-md py-1 px-4 hover:bg-sky-600'
+										className='bg-sky-500 mb-1 text-white text-md rounded-md py-1 px-4 hover:bg-sky-600'
 										type='submit'
 										onClick={handleSubmit}
 									>

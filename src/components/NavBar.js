@@ -21,7 +21,7 @@ function NavBar() {
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
-							delay: 0,
+							delay: 1.75,
 							duration: 1,
 							repeat: false,
 						}}

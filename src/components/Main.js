@@ -10,7 +10,7 @@ function Main({ handleProjectClick }) {
 
 	let count = 0
 	const displayStr = hiMessage.split('').map((e, i) => {
-		count += 0.1
+		count += 0.05
 		return (
 			<>
 				<motion.div
@@ -32,7 +32,7 @@ function Main({ handleProjectClick }) {
 		)
 	})
 	const displayStrTwo = devMessage.split('').map((e, i) => {
-		count += 0.1
+		count += 0.05
 		return (
 			<>
 				<motion.div
@@ -68,8 +68,8 @@ function Main({ handleProjectClick }) {
 							transition={{
 								type: 'spring',
 								bounce: 0.5,
-								delay: 1.6,
-								duration: 0.2,
+								delay: 0.75,
+								duration: 0.3,
 								repeat: false,
 							}}
 						>
@@ -91,7 +91,7 @@ function Main({ handleProjectClick }) {
 				animate={{ x: 0 }}
 				transition={{
 					type: 'spring',
-					delay: 3.2,
+					delay: 1.75,
 					duration: 1,
 					repeat: false,
 				}}
