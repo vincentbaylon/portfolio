@@ -9,16 +9,22 @@ import Blog from './Blog'
 
 function App() {
 	return (
-		<div className='p-0 m-0 h-screen'>
-			<NavBar />
+		<div className='p-2 md:p-5 pt-0 m-0 h-full min-h-screen flex flex-col items-center justify-center bg-gray-100'>
+			<div className='max-w-full md:max-w-6xl'>
+				<NavBar />
 
-			<Routes>
-				<Route exact path='/about' element={<About />} />
-				<Route exact path='/projects' element={<Projects />} />
-				<Route exact path='/blog' element={<Blog />} />
-				<Route exact path='/contact' element={<Contact />} />
-				<Route exact path='/' element={<Main />} />
-			</Routes>
+				<Routes>
+					<Route exact path='/about' element={<About />} />
+					<Route exact path='/projects' element={<Projects />} />
+					<Route exact path='/blog' element={<Blog />} />
+					<Route exact path='/contact' element={<Contact />} />
+				</Routes>
+
+				<Main />
+				<About />
+				<Projects />
+				<Contact />
+			</div>
 		</div>
 	)
 }

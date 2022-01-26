@@ -14,7 +14,7 @@ function NavBar() {
 
 	return (
 		<>
-			<header className='visible sm:invisible sm:h-0 p-1 w-full h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-white'>
+			<header className='visible sm:invisible sm:h-0 p-1 w-full h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-gray-100'>
 				<Link
 					className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
 					to='/'
@@ -60,7 +60,7 @@ function NavBar() {
 					</motion.div>
 				</button>
 			</header>
-			<header className='invisible h-0 sm:visible p-1 w-full sm:h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-white'>
+			<header className='invisible h-0 sm:visible p-1 w-full sm:h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-gray-100'>
 				<Link
 					className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
 					to='/'
