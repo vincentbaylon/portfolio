@@ -14,24 +14,7 @@ function NavBar() {
 
 	return (
 		<>
-			<header className='visible sm:invisible sm:h-0 p-1 w-full h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-gray-100'>
-				<Link
-					className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
-					to='/'
-				>
-					<motion.div
-						initial={{ x: -1000 }}
-						animate={{ x: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						VB
-					</motion.div>
-				</Link>
+			<header className='p-1 w-full flex items-center font-semibold text-2xl sticky top-0 z-50 bg-gray-100 justify-end bg-transparent'>
 				<button className='' onClick={handleClick}>
 					<motion.div
 						initial={{ x: 1000 }}
@@ -46,124 +29,24 @@ function NavBar() {
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							className='h-6 w-6'
-							fill='none'
-							viewBox='0 0 24 24'
+							fill=''
+							viewBox='0 0 20 20'
 							stroke='currentColor'
 						>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth={2}
-								d='M4 6h16M4 12h16M4 18h16'
-							/>
+							<g color='#0EA5E9'>
+								<path
+									fill='#0EA5E9'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth={2}
+									d='M4 6h16M4 12h16M4 18h16'
+								/>
+							</g>
 						</svg>
 					</motion.div>
 				</button>
 			</header>
-			<header className='invisible h-0 sm:visible p-1 w-full sm:h-12 flex items-center font-semibold text-2xl sticky top-0 z-40 bg-gray-100'>
-				<Link
-					className='mx-2 text-2xl font-medium hover:text-teal-500 flex-1'
-					to='/'
-				>
-					<motion.div
-						initial={{ x: -1000 }}
-						animate={{ x: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						VB
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/'
-				>
-					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.1,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						MAIN
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/about'
-				>
-					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.2,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						ABOUT
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/projects'
-				>
-					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.3,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						PROJECTS
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/blog'
-				>
-					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.4,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						BLOG
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-base font-normal text-gray-500 hover:text-teal-500'
-					to='/contact'
-				>
-					<motion.div
-						initial={{ y: -1000 }}
-						animate={{ y: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.5,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						CONTACT
-					</motion.div>
-				</Link>
-			</header>
+
 			{isOpen ? <Drawer handleClick={handleClick} /> : null}
 		</>
 	)

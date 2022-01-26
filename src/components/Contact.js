@@ -88,12 +88,12 @@ function Contact() {
 	return (
 		<>
 			<div className='h-5/6 flex flex-col py-10 md:py-20'>
-				<h1 className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-gradient-to-r from-gray-300'>
+				<h1 className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-gradient-to-r from-amber-500 text-white'>
 					Contact Me
 				</h1>
 
 				<div className='flex flex-col items-center justify-center w-full'>
-					<div className='w-full md:w-1/2 bg-gray-200 p-2 rounded-md'>
+					<div className='w-full md:w-1/2 p-2 rounded-md'>
 						<form className='w-full'>
 							<div className='mt-5 flex flex-col gap-4 justify-center'>
 								<input
@@ -129,7 +129,7 @@ function Contact() {
 										*All fields required
 									</h1>
 									<button
-										className='mb-10 bg-teal-500 text-white text-md rounded-md py-1 px-4 hover:bg-gray-400'
+										className='mb-10 bg-sky-500 text-white text-md rounded-md py-1 px-4 hover:bg-sky-600'
 										type='submit'
 										onClick={handleSubmit}
 									>
@@ -139,18 +139,18 @@ function Contact() {
 							</div>
 						</form>
 					</div>
-					<div className='flex flex-row justify-evenly mt-5 w-1/2 z-50'>
-						<img
-							className='hover:cursor-pointer'
-							src={Github}
-							onClick={handleGithub}
-							alt='Github logo'
-						/>
+					<div className='flex flex-row justify-evenly m-auto mt-5 w-1/2'>
 						<img
 							className='hover:cursor-pointer'
 							src={LinkedIn}
 							onClick={handleLinkedIn}
 							alt='Linkedin logo'
+						/>
+						<img
+							className='hover:cursor-pointer'
+							src={Github}
+							onClick={handleGithub}
+							alt='Github logo'
 						/>
 						<img
 							className='hover:cursor-pointer'

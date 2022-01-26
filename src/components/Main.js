@@ -3,6 +3,54 @@ import { useNavigate } from 'react-router-dom'
 
 function Main() {
 	const navigate = useNavigate()
+	const hiMessage = `Hi, I'm Vincent`
+	const devMessage = 'Full-Stack Developer'
+
+	let count = 0
+	const displayStr = hiMessage.split('').map((e, i) => {
+		count += 0.1
+		return (
+			<>
+				<motion.div
+					initial={{ scale: 1, opacity: 0 }}
+					animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
+					transition={{
+						type: 'spring',
+						bounce: 0.5,
+						delay: count,
+						duration: 0.05,
+						repeat: false,
+					}}
+				>
+					<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
+						{e}
+					</span>
+				</motion.div>
+			</>
+		)
+	})
+	const displayStrTwo = devMessage.split('').map((e, i) => {
+		count += 0.1
+		return (
+			<>
+				<motion.div
+					initial={{ scale: 1, opacity: 0 }}
+					animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
+					transition={{
+						type: 'spring',
+						bounce: 0.5,
+						delay: count,
+						duration: 0.05,
+						repeat: false,
+					}}
+				>
+					<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
+						{e}
+					</span>
+				</motion.div>
+			</>
+		)
+	})
 
 	const handleClick = () => {}
 
@@ -10,30 +58,61 @@ function Main() {
 		<div className='h-5/6 m-auto py-10 md:py-20 flex flex-col justify-center'>
 			<div className=''>
 				<h1 className='font-bold text-2xl md:text-4xl lg:text-6xl'>
-					Hi! I'm Vincent 👋
+					<div className='flex flex-row'>
+						{displayStr}
+						<motion.div
+							initial={{ scale: 1, opacity: 0 }}
+							animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
+							transition={{
+								type: 'spring',
+								bounce: 0.5,
+								delay: 1.6,
+								duration: 0.2,
+								repeat: false,
+							}}
+						>
+							<motion.div
+								animate={{ rotate: [0, 75, 0] }}
+								transition={{ duration: 10, repeat: Infinity }}
+							>
+								<span className='ml-4'>👋</span>
+							</motion.div>
+						</motion.div>
+					</div>
 				</h1>
 				<h1 className='font-bold text-2xl md:text-4xl lg:text-6xl'>
-					Full-Stack Developer
+					<div className='flex flex-row'>{displayStrTwo}</div>
 				</h1>
 			</div>
-			<div className='flex flex-row gap-1'>
-				<span className='mt-10'>
-					<button
-						className='mb-10 bg-sky-400 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400 shadow-md'
-						onClick={handleClick}
-					>
-						Projects
-					</button>
-				</span>
-				<span className='mt-10 mx-1'>
-					<button
-						className='mb-10 bg-sky-400 text-white text-lg rounded-md py-2 px-4 hover:bg-gray-400 shadow-md'
-						onClick={handleClick}
-					>
-						Resume
-					</button>
-				</span>
-			</div>
+			<motion.div
+				initial={{ x: -1000 }}
+				animate={{ x: 0 }}
+				transition={{
+					type: 'spring',
+					delay: 3.25,
+					duration: 1,
+					repeat: false,
+				}}
+			>
+				<div className='flex flex-row gap-1'>
+					<span className='mx-1 mt-10'>
+						<button
+							className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sms py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
+							onClick={handleClick}
+						>
+							PROJECTS
+						</button>
+					</span>
+					<span className='mt-10 mx-1'>
+						<button
+							className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sm py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
+							onClick={handleClick}
+						>
+							RESUME
+						</button>
+					</span>
+				</div>
+			</motion.div>
 		</div>
 	)
 }
