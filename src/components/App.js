@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import About from './About'
@@ -9,6 +10,11 @@ import Blog from './Blog'
 import Footer from './Footer'
 
 function App() {
+	const projectRef = useRef(null)
+	const handleProjectClick = () => {
+		projectRef.current.scrollIntoView({ behavior: 'smooth' })
+	}
+
 	return (
 		<>
 			<div
@@ -18,9 +24,11 @@ function App() {
 				<div className='max-w-full md:max-w-6xl'>
 					<NavBar />
 
-					<Main />
+					<Main handleProjectClick={handleProjectClick} />
 					<About />
-					<Projects />
+					<div ref={projectRef}>
+						<Projects />
+					</div>
 					<Contact />
 				</div>
 			</div>

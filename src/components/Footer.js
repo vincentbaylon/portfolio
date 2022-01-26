@@ -1,6 +1,8 @@
-import { HashLink as Link } from 'react-router-hash-link'
-
 function Footer() {
+	const handleClick = () => {
+		window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+	}
+
 	return (
 		<div className='p-5 text-slate-800 flex items-center bg-gray-500'>
 			<h1 className='text-md md:text-lg flex-1'>
@@ -13,9 +15,12 @@ function Footer() {
 				</a>
 			</h1>
 			<div className=''>
-				<Link className='hover:underline hover:text-sky-500' to='/#top'>
+				<button
+					className='hover:underline hover:text-sky-500'
+					onClick={handleClick}
+				>
 					BACK TO TOP
-				</Link>
+				</button>
 			</div>
 		</div>
 	)

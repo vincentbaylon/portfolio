@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
 import resume from './Resume.docx'
 
-function Main() {
+function Main({ handleProjectClick }) {
 	const navigate = useNavigate()
 	const hiMessage = `Hi! I'm Vincent`
 	const devMessage = 'Full-Stack Developer'
@@ -99,14 +98,12 @@ function Main() {
 			>
 				<div className='flex flex-row gap-1'>
 					<span className='mx-1 mt-10'>
-						<HashLink to='/#projects'>
-							<button
-								className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sms py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
-								onClick={handleClick}
-							>
-								PROJECTS
-							</button>
-						</HashLink>
+						<button
+							className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sms py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
+							onClick={handleProjectClick}
+						>
+							PROJECTS
+						</button>
 					</span>
 					<span className='mt-10 mx-1'>
 						<a href={resume} download>
