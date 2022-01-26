@@ -88,9 +88,38 @@ function Contact() {
 	return (
 		<>
 			<div className='h-5/6 flex flex-col py-10 md:py-20'>
-				<h1 className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-gradient-to-r from-amber-500 text-white'>
-					Contact Me
+				<h1
+					id='contact'
+					className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-amber-500 text-white'
+				>
+					Let's Connect!
 				</h1>
+				<div className='flex flex-row justify-evenly m-auto my-5 w-full md:w-1/2'>
+					<img
+						className='hover:cursor-pointer'
+						src={LinkedIn}
+						onClick={handleLinkedIn}
+						alt='Linkedin logo'
+					/>
+					<img
+						className='hover:cursor-pointer'
+						src={Github}
+						onClick={handleGithub}
+						alt='Github logo'
+					/>
+					<img
+						className='hover:cursor-pointer'
+						src={Twitter}
+						onClick={handleTwitter}
+						alt='Twitter logo'
+					/>
+					<img
+						className='hover:cursor-pointer'
+						src={Instagram}
+						onClick={handleInstagram}
+						alt='Instagram logo'
+					/>
+				</div>
 
 				<div className='flex flex-col items-center justify-center w-full'>
 					<div className='w-full md:w-1/2 p-2 rounded-md'>
@@ -138,32 +167,6 @@ function Contact() {
 								</span>
 							</div>
 						</form>
-					</div>
-					<div className='flex flex-row justify-evenly m-auto mt-5 w-1/2'>
-						<img
-							className='hover:cursor-pointer'
-							src={LinkedIn}
-							onClick={handleLinkedIn}
-							alt='Linkedin logo'
-						/>
-						<img
-							className='hover:cursor-pointer'
-							src={Github}
-							onClick={handleGithub}
-							alt='Github logo'
-						/>
-						<img
-							className='hover:cursor-pointer'
-							src={Twitter}
-							onClick={handleTwitter}
-							alt='Twitter logo'
-						/>
-						<img
-							className='hover:cursor-pointer'
-							src={Instagram}
-							onClick={handleInstagram}
-							alt='Instagram logo'
-						/>
 					</div>
 				</div>
 			</div>

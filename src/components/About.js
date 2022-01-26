@@ -10,7 +10,10 @@ function About() {
 
 	return (
 		<div className='h-5/6 flex flex-col py-10 md:py-20'>
-			<h1 className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-gradient-to-r from-amber-500'>
+			<h1
+				id='about'
+				className='p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-amber-500'
+			>
 				About Me
 			</h1>
 
@@ -23,10 +26,9 @@ function About() {
 						deadlines and working with clients.
 						<br />
 						<br />
-						I enjoy being creative and using my code as a way to express myself
-						and share my craft through technology. I strive to create visually
-						appealing designs for users with the user experience always the
-						focus.
+						I enjoy being creative and using code as a way to express myself
+						through technology. I strive to create visually appealing designs
+						for users with the user experience always the main focus.
 						<br />
 						<br />
 						When I'm not coding I enjoy DJing, fitness, playing and watching

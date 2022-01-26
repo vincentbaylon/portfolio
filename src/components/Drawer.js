@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import { motion } from 'framer-motion'
 
 function Drawer({ handleClick }) {
@@ -8,11 +8,11 @@ function Drawer({ handleClick }) {
 				className='drawer z-50 flex flex-col justify-evenly py-20'
 				onClick={handleClick}
 			>
-				<button className='m-5 absolute top-0 right-0'>
+				<button className='m-2 md:m-6 absolute top-0 right-0'>
 					<span className=''>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							className='h-10 w-10'
+							className='h-6 w-6'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='white'
@@ -27,8 +27,8 @@ function Drawer({ handleClick }) {
 					</span>
 				</button>
 				<Link
-					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/'
+					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
+					to='/#top'
 				>
 					<motion.div
 						initial={{ x: 1000 }}
@@ -36,16 +36,16 @@ function Drawer({ handleClick }) {
 						transition={{
 							type: 'spring',
 							delay: 0.1,
-							duration: 1,
+							duration: 0.5,
 							repeat: false,
 						}}
 					>
-						MAIN
+						BACK TO TOP
 					</motion.div>
 				</Link>
 				<Link
-					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/about'
+					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
+					to='/#about'
 				>
 					<motion.div
 						initial={{ x: 1000 }}
@@ -53,7 +53,7 @@ function Drawer({ handleClick }) {
 						transition={{
 							type: 'spring',
 							delay: 0.2,
-							duration: 1,
+							duration: 0.5,
 							repeat: false,
 						}}
 					>
@@ -61,8 +61,8 @@ function Drawer({ handleClick }) {
 					</motion.div>
 				</Link>
 				<Link
-					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/projects'
+					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
+					to='/#projects'
 				>
 					<motion.div
 						initial={{ x: 1000 }}
@@ -70,33 +70,17 @@ function Drawer({ handleClick }) {
 						transition={{
 							type: 'spring',
 							delay: 0.3,
-							duration: 1,
+							duration: 0.5,
 							repeat: false,
 						}}
 					>
 						PROJECTS
 					</motion.div>
 				</Link>
+
 				<Link
-					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/blog'
-				>
-					<motion.div
-						initial={{ x: 1000 }}
-						animate={{ x: 0 }}
-						transition={{
-							type: 'spring',
-							delay: 0.4,
-							duration: 1,
-							repeat: false,
-						}}
-					>
-						BLOG
-					</motion.div>
-				</Link>
-				<Link
-					className='mx-5 text-lg font-normal text-white hover:text-teal-500'
-					to='/contact'
+					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
+					to='/#contact'
 				>
 					<motion.div
 						initial={{ x: 1000 }}
@@ -104,7 +88,7 @@ function Drawer({ handleClick }) {
 						transition={{
 							type: 'spring',
 							delay: 0.5,
-							duration: 1,
+							duration: 0.5,
 							repeat: false,
 						}}
 					>

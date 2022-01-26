@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+import resume from './Resume.docx'
 
 function Main() {
 	const navigate = useNavigate()
-	const hiMessage = `Hi, I'm Vincent`
+	const hiMessage = `Hi! I'm Vincent`
 	const devMessage = 'Full-Stack Developer'
 
 	let count = 0
@@ -18,7 +21,7 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.05,
+						duration: 0.03,
 						repeat: false,
 					}}
 				>
@@ -40,7 +43,7 @@ function Main() {
 						type: 'spring',
 						bounce: 0.5,
 						delay: count,
-						duration: 0.05,
+						duration: 0.03,
 						repeat: false,
 					}}
 				>
@@ -89,27 +92,28 @@ function Main() {
 				animate={{ x: 0 }}
 				transition={{
 					type: 'spring',
-					delay: 3.25,
+					delay: 3.2,
 					duration: 1,
 					repeat: false,
 				}}
 			>
 				<div className='flex flex-row gap-1'>
 					<span className='mx-1 mt-10'>
-						<button
-							className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sms py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
-							onClick={handleClick}
-						>
-							PROJECTS
-						</button>
+						<HashLink to='/#projects'>
+							<button
+								className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sms py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
+								onClick={handleClick}
+							>
+								PROJECTS
+							</button>
+						</HashLink>
 					</span>
 					<span className='mt-10 mx-1'>
-						<button
-							className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sm py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'
-							onClick={handleClick}
-						>
-							RESUME
-						</button>
+						<a href={resume} download>
+							<button className='mb-10 text-sky-500 border-2 border-sky-500 text-md rounded-sm py-2 px-4 hover:bg-sky-500 hover:text-white shadow-md'>
+								RESUME
+							</button>
+						</a>
 					</span>
 				</div>
 			</motion.div>
