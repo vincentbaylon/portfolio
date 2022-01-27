@@ -57,7 +57,7 @@ function Main({ handleProjectClick }) {
 	const handleClick = () => {}
 
 	return (
-		<div className='h-5/6 m-auto py-10 md:py-20 flex flex-col justify-center'>
+		<div className='mt-10 h-5/6 m-auto py-10 md:py-20 flex flex-col justify-center'>
 			<div className=''>
 				<h1 className='font-bold text-2xl md:text-4xl lg:text-6xl'>
 					<div className='flex flex-row py-1'>
@@ -91,7 +91,7 @@ function Main({ handleProjectClick }) {
 				animate={{ x: 0 }}
 				transition={{
 					type: 'spring',
-					delay: 1.75,
+					delay: 0,
 					duration: 1,
 					repeat: false,
 				}}

@@ -4,7 +4,7 @@ function Footer() {
 	}
 
 	return (
-		<div className='p-3 text-slate-800 bg-gray-500 flex flex-row justify-center'>
+		<div className='p-3 text-slate-400 bg-slate-700 flex flex-row justify-center'>
 			<div className='md:max-w-6xl w-full flex flex-row items-center justify-center'>
 				<h1 className='text-md md:text-lg flex-1'>
 					© 2022 Vincent Baylon -{' '}
