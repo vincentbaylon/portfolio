@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import FadeIn from 'react-fade-in'
 
 import About from './About'
 import Projects from './Projects'
@@ -19,17 +20,24 @@ function App() {
 		<>
 			<div
 				id='top'
-				className='p-2 md:p-5 pt-0 m-0 h-full min-h-screen flex flex-col items-center justify-center bg-slate-800 text-white'
+				className='p-2 md:p-5 pt-0 m-0 h-full min-h-screen flex flex-col items-center justify-center bg-zinc-800 text-white'
 			>
 				<div className='max-w-full md:max-w-6xl'>
 					<NavBar />
 
 					<Main handleProjectClick={handleProjectClick} />
-					<About />
+					<FadeIn>
+						<About />
+					</FadeIn>
+
 					<div ref={projectRef}>
-						<Projects />
+						<FadeIn>
+							<Projects />
+						</FadeIn>
 					</div>
-					<Contact />
+					<FadeIn>
+						<Contact />
+					</FadeIn>
 				</div>
 			</div>
 			<div>

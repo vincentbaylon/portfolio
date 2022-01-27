@@ -122,29 +122,29 @@ function Contact() {
 				</div>
 
 				<div className='flex flex-col items-center justify-center w-full'>
-					<div className='w-full md:w-1/2 p-2 rounded-md bg-slate-500'>
-						<form className='w-full'>
+					<div className='w-full md:w-1/2 p-3 rounded-md bg-slate-500'>
+						<form className='w-full text-slate-600'>
 							<div className='mt-2 flex flex-col gap-4 justify-center'>
 								<input
-									className='p-1 h-10 rounded-md'
+									className='p-2 h-10 rounded-md'
 									id='name'
 									name='name'
 									onChange={handleChange}
 									required
-									placeholder='Enter your name*'
+									placeholder='Name*'
 									value={formData.name}
 								/>
 								<input
-									className='p-1 h-10 rounded-md'
+									className='p-2 h-10 rounded-md'
 									id='email'
 									name='email'
 									onChange={handleChange}
 									required
-									placeholder='Enter your email*'
+									placeholder='Email*'
 									value={formData.email}
 								/>
 								<textarea
-									className='p-1 rounded-md'
+									className='p-2 rounded-md'
 									id='message'
 									name='message'
 									onChange={handleChange}

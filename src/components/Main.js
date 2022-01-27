@@ -60,7 +60,7 @@ function Main({ handleProjectClick }) {
 		<div className='h-5/6 m-auto py-10 md:py-20 flex flex-col justify-center'>
 			<div className=''>
 				<h1 className='font-bold text-2xl md:text-4xl lg:text-6xl'>
-					<div className='flex flex-row'>
+					<div className='flex flex-row py-1'>
 						{displayStr}
 						<motion.div
 							initial={{ scale: 1, opacity: 0 }}
@@ -83,7 +83,7 @@ function Main({ handleProjectClick }) {
 					</div>
 				</h1>
 				<h1 className='font-bold text-2xl md:text-4xl lg:text-6xl'>
-					<div className='flex flex-row'>{displayStrTwo}</div>
+					<div className='flex flex-row py-1'>{displayStrTwo}</div>
 				</h1>
 			</div>
 			<motion.div

@@ -42,7 +42,7 @@ function About() {
 					<h1 className='text-2xl md:text-4xl font-bold'>Skills</h1>
 					<h1 className='p-1 text-xl text-slate-300'>
 						React • JavaScript • Ruby on Rails • Ruby • PostgreSQL • SQL • Git •
-						Github • HTML5 • CSS3 • TailwindCSS
+						GitHub • HTML5 • CSS3 • TailwindCSS
 					</h1>
 				</div>
 			</div>
