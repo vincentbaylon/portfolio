@@ -28,7 +28,7 @@ function About() {
 						<br />
 						I enjoy being creative and using code as a way to express myself
 						through technology. I strive to create visually appealing designs
-						for users with the user experience always the main focus.
+						with the user experience always as the main focus.
 						<br />
 						<br />
 						When I'm not coding I enjoy DJing, fitness, playing and watching
