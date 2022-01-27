@@ -36,7 +36,7 @@ function Projects() {
 						Cruelty-Free Recipes
 					</h1>
 					<img
-						className='w-1/2 py-1 hover:cursor-pointer hover:border-2'
+						className='md:w-1/2 py-1 hover:cursor-pointer hover:border-2'
 						src={cruelty}
 						alt='Cruelty free recipes screenshot'
 						onClick={handleCruelty}
@@ -74,7 +74,7 @@ function Projects() {
 						Phoenix Fitness
 					</h1>
 					<img
-						className='w-1/2 py-1 hover:cursor-pointer hover:border-2'
+						className='md:w-1/2 py-1 hover:cursor-pointer hover:border-2'
 						src={phoenix}
 						alt='Phoenix fitness screenshot'
 						onClick={handlePhoenix}
