@@ -158,11 +158,11 @@ function Contact() {
 										*All fields required
 									</h1>
 									<button
-										className='bg-sky-500 mb-1 text-white text-md rounded-md py-1 px-4 hover:bg-sky-600'
+										className='border-sky-500 border-2  mb-1 text-slate-300 text-md rounded-md py-1 px-4 hover:bg-sky-500'
 										type='submit'
 										onClick={handleSubmit}
 									>
-										Submit
+										SUBMIT
 									</button>
 								</span>
 							</div>

@@ -71,7 +71,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
 						to=''
 						onClick={handleProjectClick}
 					>
-						PROJECT
+						PROJECTS
 					</Link>
 					<Link
 						className='text-sky-500 font-semibold hover:underline hover:decoration-amber-500'

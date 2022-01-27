@@ -45,20 +45,20 @@ function Projects() {
 					</h1>
 					<div className='flex flex-row gap-5'>
 						<a
-							className='text-sky-500 px-2 font-semibold hover:underline text-lg'
+							className='text-sky-500 px-2 font-semibold hover:underline hover:decoration-amber-500 text-lg'
 							href='https://crueltyfree.recipes/'
 							target='_blank'
 							rel='noreferrer noopener'
 						>
-							Live Site
+							LIVE SITE
 						</a>
 						<a
-							className='text-sky-500 font-semibold hover:underline text-lg'
+							className='text-sky-500 font-semibold hover:underline hover:decoration-amber-500 text-lg'
 							href='https://github.com/vincentbaylon/cruelty-free-recipes'
 							target='_blank'
 							rel='noreferrer noopener'
 						>
-							GitHub
+							GITHUB
 						</a>
 					</div>
 				</div>
@@ -82,20 +82,20 @@ function Projects() {
 					</h1>
 					<div className='flex flex-row gap-5'>
 						<a
-							className='text-sky-500 px-2 font-semibold hover:underline text-lg'
+							className='text-sky-500 px-2 font-semibold hover:underline hover:decoration-amber-500 text-lg'
 							href='https://phoenix-fitness.herokuapp.com/'
 							target='_blank'
 							rel='noreferrer noopener'
 						>
-							Live Site
+							LIVE SITE
 						</a>
 						<a
-							className='text-sky-500 font-semibold hover:underline text-lg'
+							className='text-sky-500 font-semibold hover:underline hover:decoration-amber-500 text-lg'
 							href='https://github.com/vincentbaylon/phoenix'
 							target='_blank'
 							rel='noreferrer noopener'
 						>
-							GitHub
+							GITHUB
 						</a>
 					</div>
 				</div>
