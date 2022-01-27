@@ -1,12 +1,6 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-
-import ProjectCard from './ProjectCard'
-import ProjectData from './ProjectData'
-import Modal from './Modal'
-
 import cruelty from './assets/crueltyfreerecipes.png'
 import phoenix from './assets/phoenixfitness.png'
+import ProjectCard from './ProjectCard'
 
 function Projects() {
 	const openInNewTab = (url) => {
