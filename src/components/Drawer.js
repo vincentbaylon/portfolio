@@ -26,7 +26,7 @@ function Drawer({ handleClick }) {
 						</svg>
 					</span>
 				</button>
-				<Link
+				{/* <Link
 					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
 					to='/#top'
 				>
@@ -42,7 +42,7 @@ function Drawer({ handleClick }) {
 					>
 						BACK TO TOP
 					</motion.div>
-				</Link>
+				</Link> */}
 				<Link
 					className='mx-5 text-lg font-normal text-white hover:text-sky-500 hover:underline'
 					to='/#about'
@@ -52,7 +52,7 @@ function Drawer({ handleClick }) {
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
-							delay: 0.2,
+							delay: 0.1,
 							duration: 0.5,
 							repeat: false,
 						}}
@@ -69,7 +69,7 @@ function Drawer({ handleClick }) {
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
-							delay: 0.3,
+							delay: 0.2,
 							duration: 0.5,
 							repeat: false,
 						}}
@@ -87,7 +87,7 @@ function Drawer({ handleClick }) {
 						animate={{ x: 0 }}
 						transition={{
 							type: 'spring',
-							delay: 0.5,
+							delay: 0.3,
 							duration: 0.5,
 							repeat: false,
 						}}

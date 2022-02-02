@@ -8,12 +8,9 @@ function Projects() {
 		if (newWindow) newWindow.opener = null
 	}
 
-	const handleCruelty = () => {
-		openInNewTab('https://crueltyfree.recipes/')
-	}
-
-	const handlePhoenix = () => {
-		openInNewTab('https://phoenix-fitness.herokuapp.com/')
+	const handleLink = (e) => {
+		const url = e.target?.getAttribute('dataset')
+		openInNewTab(url)
 	}
 
 	return (
@@ -25,80 +22,42 @@ function Projects() {
 				Projects
 			</h1>
 			<div className='p-1 grid flex-col grid-cols-1 xl:grid-cols-2 gap-10'>
-				<div className='flex flex-col items-center text-center'>
-					<h1 className='p-2 text-2xl font-semibold underline decoration-sky-500'>
-						Cruelty-Free Recipes
-					</h1>
+				<ProjectCard
+					key='Cruelty Free Recipes'
+					name='Cruelty Free Recipes'
+					url='https://crueltyfree.recipes/'
+					desc='A plant-based recipe site with rating and commenting features for
+					Vegans or those looking to incorporate more plant-based meals into
+					their diets.'
+					tools='React • Ruby on Rails • TailwindCSS • PostgreSQL • Framer Motion'
+					repo='https://github.com/vincentbaylon/cruelty-free-recipes'
+				>
 					<img
 						className='md:w-1/2 py-1 hover:cursor-pointer hover:border-2'
 						src={cruelty}
 						alt='Cruelty free recipes screenshot'
-						onClick={handleCruelty}
+						dataset='https://crueltyfree.recipes/'
+						onClick={handleLink}
 					/>
-					<h1 className='p-2 text-slate-300 text-lg'>
-						A plant-based recipe site with rating and commenting features for
-						Vegans or those looking to incorporate more plant-based meals into
-						their diets.
-					</h1>
-					<h1 className='p-2 text-amber-500 text-lg'>
-						React • Ruby on Rails • TailwindCSS • PostgreSQL • Framer Motion
-					</h1>
-					<div className='flex flex-row gap-5'>
-						<a
-							className='text-sky-500 px-2 font-semibold hover:underline hover:decoration-amber-500 text-lg'
-							href='https://crueltyfree.recipes/'
-							target='_blank'
-							rel='noreferrer noopener'
-						>
-							LIVE SITE
-						</a>
-						<a
-							className='text-sky-500 font-semibold hover:underline hover:decoration-amber-500 text-lg'
-							href='https://github.com/vincentbaylon/cruelty-free-recipes'
-							target='_blank'
-							rel='noreferrer noopener'
-						>
-							GITHUB
-						</a>
-					</div>
-				</div>
+				</ProjectCard>
 
-				<div className='flex flex-col items-center text-center'>
-					<h1 className='p-2 text-2xl font-semibold underline decoration-sky-500'>
-						Phoenix Fitness
-					</h1>
+				<ProjectCard
+					key='Phoenix Fitness'
+					name='Phoenix Fitness'
+					url='https://phoenix-fitness.herokuapp.com/'
+					desc='A workout and body progress tracker to assist in achieving your
+					fitness goals.'
+					tools='React • Ruby on Rails • MUI • PostgreSQL • Firebase'
+					repo='https://github.com/vincentbaylon/phoenix'
+				>
 					<img
 						className='md:w-1/2 py-1 hover:cursor-pointer hover:border-2'
 						src={phoenix}
 						alt='Phoenix fitness screenshot'
-						onClick={handlePhoenix}
+						dataset='https://phoenix-fitness.herokuapp.com/'
+						onClick={handleLink}
 					/>
-					<h1 className='p-2 text-slate-300 text-lg'>
-						A workout and body progress tracker to assist in achieving your
-						fitness goals.
-					</h1>
-					<h1 className='p-2 text-amber-500 text-lg'>
-						React • Ruby on Rails • MUI • PostgreSQL • Firebase
-					</h1>
-					<div className='flex flex-row gap-5'>
-						<a
-							className='text-sky-500 px-2 font-semibold hover:underline hover:decoration-amber-500 text-lg'
-							href='https://phoenix-fitness.herokuapp.com/'
-							target='_blank'
-							rel='noreferrer noopener'
-						>
-							LIVE SITE
-						</a>
-						<a
-							className='text-sky-500 font-semibold hover:underline hover:decoration-amber-500 text-lg'
-							href='https://github.com/vincentbaylon/phoenix'
-							target='_blank'
-							rel='noreferrer noopener'
-						>
-							GITHUB
-						</a>
-					</div>
-				</div>
+				</ProjectCard>
 			</div>
 		</div>
 	)

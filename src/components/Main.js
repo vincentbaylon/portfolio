@@ -12,7 +12,7 @@ function Main({ handleProjectClick }) {
 	const displayStr = hiMessage.split('').map((e, i) => {
 		count += 0.05
 		return (
-			<>
+			<div key={i}>
 				<motion.div
 					initial={{ scale: 1, opacity: 0 }}
 					animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
@@ -24,17 +24,15 @@ function Main({ handleProjectClick }) {
 						repeat: false,
 					}}
 				>
-					<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
-						{e}
-					</span>
+					<span className={e === e.toUpperCase() ? 'ml-1' : null}>{e}</span>
 				</motion.div>
-			</>
+			</div>
 		)
 	})
 	const displayStrTwo = devMessage.split('').map((e, i) => {
 		count += 0.05
 		return (
-			<>
+			<div key={i}>
 				<motion.div
 					initial={{ scale: 1, opacity: 0 }}
 					animate={{ scale: [1, 1.5, 1], opacity: [0, 1] }}
@@ -46,15 +44,11 @@ function Main({ handleProjectClick }) {
 						repeat: false,
 					}}
 				>
-					<span className={e === e.toUpperCase() ? 'ml-1' : null} key={i}>
-						{e}
-					</span>
+					<span className={e === e.toUpperCase() ? 'ml-1' : null}>{e}</span>
 				</motion.div>
-			</>
+			</div>
 		)
 	})
-
-	const handleClick = () => {}
 
 	return (
 		<div className='mt-10 h-5/6 m-auto py-10 md:py-20 flex flex-col justify-center'>
