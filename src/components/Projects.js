@@ -33,7 +33,7 @@ function Projects() {
                repo="https://github.com/vincentbaylon/cruelty-free-recipes"
             >
                <img
-                  className="md:w-1/2 py-1 hover:cursor-pointer hover:border-2"
+                  className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
                   src={cruelty}
                   alt="Cruelty free recipes screenshot"
                   dataset="https://crueltyfree.recipes/"
@@ -51,7 +51,7 @@ function Projects() {
                repo="https://github.com/vincentbaylon/phoenix"
             >
                <img
-                  className="md:w-1/2 py-1 hover:cursor-pointer hover:border-2"
+                  className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
                   src={phoenix}
                   alt="Phoenix fitness screenshot"
                   dataset="https://phoenix-fitness.herokuapp.com/"
