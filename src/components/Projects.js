@@ -1,5 +1,6 @@
 import cruelty from "./assets/crueltyfreerecipes.png";
 import phoenix from "./assets/phoenixfitness.png";
+import ecommerce from "./assets/fmecommerce.png";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -22,6 +23,23 @@ function Projects() {
             Projects
          </h1>
          <div className="p-1 grid flex-col grid-cols-1 xl:grid-cols-2 gap-10">
+            <ProjectCard
+               key="Frontend Mentors - E-commerce"
+               name="Frontend Mentors - E-commerce"
+               url="https://fm-ecommerce-vb.netlify.app/"
+               desc="Challenge to build out this e-commerce product page and get it looking as close to the design as possible."
+               tools="HTML5 • CSS3 • SASS • BEM • JavaScript"
+               repo="https://github.com/vincentbaylon/css-fm-ecommerce"
+            >
+               <img
+                  className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
+                  src={ecommerce}
+                  alt="E-commerce screenshot"
+                  dataset="https://fm-ecommerce-vb.netlify.app/"
+                  onClick={handleLink}
+               />
+            </ProjectCard>
+
             <ProjectCard
                key="Cruelty Free Recipes"
                name="Cruelty Free Recipes"
