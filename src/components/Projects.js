@@ -27,7 +27,7 @@ function Projects() {
                key="Frontend Mentors - E-commerce"
                name="Frontend Mentors - E-commerce"
                url="https://fm-ecommerce-vb.netlify.app/"
-               desc="Challenge to build out this e-commerce product page and get it looking as close to the design as possible."
+               desc="A challenge to build out an e-commerce product page and get it looking as close to the design as possible."
                tools="HTML5 • CSS3 • SASS • BEM • JavaScript"
                repo="https://github.com/vincentbaylon/css-fm-ecommerce"
             >
