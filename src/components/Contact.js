@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import Github from "./github.svg";
 import LinkedIn from "./linkedin.svg";
 import Twitter from "./twitter.svg";
-import Instagram from "./instagram.svg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -79,10 +77,6 @@ function Contact() {
 
   const handleTwitter = () => {
     openInNewTab("https://twitter.com/vincentbaylon_");
-  };
-
-  const handleInstagram = () => {
-    openInNewTab("https://www.instagram.com/vincebaylon_/");
   };
 
   return (
