@@ -1,5 +1,3 @@
-import cruelty from "./assets/crueltyfreerecipes.png";
-import phoenix from "./assets/phoenixfitness.png";
 import ecommerce from "./assets/fmecommerce.png";
 import ProjectCard from "./ProjectCard";
 
