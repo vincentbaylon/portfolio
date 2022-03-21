@@ -1,4 +1,5 @@
 import ecommerce from "./assets/fmecommerce.png";
+import room from "./assets/fmroom.png";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -22,8 +23,25 @@ function Projects() {
       </h1>
       <div className="p-1 grid flex-col grid-cols-1 xl:grid-cols-2 gap-10">
         <ProjectCard
-          key="Frontend Mentors - E-commerce"
-          name="Frontend Mentors - E-commerce"
+          key="Room homepage"
+          name="Room homepage"
+          url="https://room-homepage-vb.netlify.app/"
+          desc="A challenge to build out a product page and get it looking as close to the design as possible."
+          tools="HTML5 • CSS3 • SASS • BEM • JavaScript"
+          repo="https://github.com/vincentbaylon/room-homepage"
+        >
+          <img
+            className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
+            src={room}
+            alt="Room homepage screenshot"
+            dataset="https://room-homepage-vb.netlify.app/"
+            onClick={handleLink}
+          />
+        </ProjectCard>
+
+        <ProjectCard
+          key="E-commerce product page"
+          name="E-commerce product page"
           url="https://fm-ecommerce-vb.netlify.app/"
           desc="A challenge to build out an e-commerce product page and get it looking as close to the design as possible."
           tools="HTML5 • CSS3 • SASS • BEM • JavaScript"
