@@ -17,7 +17,7 @@ function Projects() {
     <div className="py-10 md:py-20 flex flex-col gap-2">
       <h1
         id="projects"
-        className="p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-500 bg-gradient-to-l from-slate-700 text-right font-light"
+        className="p-2 my-5 w-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white bg-gradient-to-l from-black text-right font-light"
       >
         Projects
       </h1>
@@ -31,7 +31,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/room-homepage"
         >
           <img
-            className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
+            className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-black object-cover"
             src={room}
             alt="Room homepage screenshot"
             dataset="https://room-homepage-vb.netlify.app/"
@@ -48,7 +48,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/css-fm-ecommerce"
         >
           <img
-            className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-white object-cover"
+            className="md:w-1/2 my-2 border-2 border-transparent hover:cursor-pointer hover:border-black object-cover"
             src={ecommerce}
             alt="E-commerce screenshot"
             dataset="https://fm-ecommerce-vb.netlify.app/"

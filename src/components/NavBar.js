@@ -12,7 +12,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
   };
 
   return (
-    <div className="flex relative w-full justify-center bg-zinc-800">
+    <div className="flex relative w-full justify-center bg-black">
       <header className="sm:visible md:invisible p-1 flex items-center font-semibold text-2xl absolute top-0 right-0 z-50 justify-end">
         <button className="" onClick={handleClick}>
           <motion.div
@@ -32,9 +32,9 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
               viewBox="0 0 20 20"
               stroke="currentColor"
             >
-              <g color="#0EA5E9">
+              <g color="#000">
                 <path
-                  fill="#0EA5E9"
+                  fill="#000"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
@@ -57,23 +57,23 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
           repeat: false,
         }}
       >
-        <header className="invisible md:visible p-2 flex flex-row w-full items-center top-0 z-50 justify-evenly absolute text-md bg-slate-700 rounded-md">
+        <header className="invisible md:visible p-2 flex flex-row w-full items-center top-0 z-50 justify-evenly absolute text-md bg-black rounded-md">
           <Link
-            className="text-sky-500 font-semibold hover:underline hover:decoration-amber-500"
+            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleAboutClick}
           >
             ABOUT
           </Link>
           <Link
-            className="text-sky-500 font-semibold hover:underline hover:decoration-amber-500"
+            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleProjectClick}
           >
             PROJECTS
           </Link>
           <Link
-            className="text-sky-500 font-semibold hover:underline hover:decoration-amber-500"
+            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleContactClick}
           >

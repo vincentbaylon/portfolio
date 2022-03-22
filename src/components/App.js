@@ -27,7 +27,7 @@ function App() {
     <>
       <div
         id="top"
-        className="p-2 md:p-5 pt-0 m-0 h-full min-h-screen flex flex-col items-center justify-center bg-zinc-800 text-white"
+        className="p-2 md:p-5 pt-0 m-0 h-full min-h-screen flex flex-col items-center justify-center bg-slate-100 text-white"
       >
         <div className="max-w-full md:max-w-6xl">
           <NavBar

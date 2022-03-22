@@ -4,12 +4,12 @@ function Footer() {
   };
 
   return (
-    <div className="p-3 text-slate-400 bg-slate-700 flex flex-row justify-center">
+    <div className="p-3 text-white bg-black flex flex-row justify-center">
       <div className="md:max-w-6xl w-full flex flex-row items-center justify-center">
         <h1 className="text-md md:text-lg flex-1">
           © 2022 Vincent Baylon -{" "}
           <a
-            className="hover:underline hover:text-sky-500 hover:decoration-amber-500 transition-all"
+            className="hover:underline hover:decoration-rose-500 transition-all"
             href={"mailto:vincentbaylon@gmail.com"}
           >
             vincentbaylon@gmail.com
@@ -17,7 +17,7 @@ function Footer() {
         </h1>
         <div className="">
           <button
-            className="hover:underline hover:text-sky-500 hover:decoration-amber-500 transition-all"
+            className="hover:underline hover:decoration-rose-500 transition-all"
             onClick={handleClick}
           >
             BACK TO TOP

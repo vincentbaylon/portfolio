@@ -84,10 +84,16 @@ function Contact() {
       <div className="h-5/6 flex flex-col py-10 md:py-20">
         <h1
           id="contact"
-          className="p-2 my-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-500 bg-gradient-to-r from-slate-700 font-light"
+          className="p-2 my-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white bg-gradient-to-r from-black font-light"
         >
           Let's Connect!
         </h1>
+        <div className="flex justify-center">
+          <h1 className="text-black text-md md:text-xl">
+            Looking for a developer to build your vision or join your team?
+          </h1>
+        </div>
+
         <div className="flex flex-row justify-evenly m-auto my-5 w-full md:w-1/2">
           <img
             className="hover:cursor-pointer"
@@ -116,8 +122,8 @@ function Contact() {
         </div>
 
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="w-full md:w-1/2 p-3 rounded-md bg-slate-500">
-            <form className="w-full text-slate-600">
+          <div className="w-full md:w-1/2 p-3 rounded-md bg-gray-500">
+            <form className="w-full text-black">
               <div className="mt-2 flex flex-col gap-4 justify-center">
                 <input
                   className="p-2 h-10 rounded-md"
@@ -152,7 +158,7 @@ function Contact() {
                     *All fields required
                   </h1>
                   <button
-                    className="border-sky-500 border-2  mb-1 text-slate-300 text-md rounded-md py-1 px-4 hover:bg-sky-500"
+                    className="border-white border-2 mb-1 text-gray-500 text-md rounded-md py-1 px-4 bg-white hover:bg-gray-500 hover:text-white"
                     type="submit"
                     onClick={handleSubmit}
                   >
