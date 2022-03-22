@@ -38,9 +38,9 @@ function App() {
 
           <Main handleProjectClick={handleProjectClick} />
           <div ref={aboutRef}>
-            {/* <FadeIn> */}
-            <About />
-            {/* </FadeIn> */}
+            <FadeIn>
+              <About />
+            </FadeIn>
           </div>
 
           <div ref={projectRef}>
