@@ -1,7 +1,14 @@
 function ProjectCard({ name, url, img, desc, tools, live, repo, children }) {
   return (
     <div className="flex flex-col items-center overflow-hidden text-center">
-      <h1 className="p-2 text-2xl font-semibold text-black">{name}</h1>
+      <a
+        className="p-2 text-2xl font-semibold text-black"
+        href={url}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {name}
+      </a>
       {children}
       <h1 className="p-2 text-lg text-gray-500">{desc}</h1>
       <h1 className="p-2 text-lg text-black">{tools}</h1>
