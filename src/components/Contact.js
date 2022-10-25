@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import Github from "./github.svg";
 import LinkedIn from "./linkedin.svg";
+import Twitter from "./twitter.svg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -75,7 +76,7 @@ function Contact() {
   };
 
   const handleTwitter = () => {
-    openInNewTab("https://twitter.com/vincentbaylon_");
+    openInNewTab("https://twitter.com/codingwithVince");
   };
 
   return (
@@ -106,12 +107,12 @@ function Contact() {
             onClick={handleGithub}
             alt="Github logo"
           />
-          {/* <img
+          <img
             className="hover:cursor-pointer"
             src={Twitter}
             onClick={handleTwitter}
             alt="Twitter logo"
-          /> */}
+          />
           {/* <img
                   className="hover:cursor-pointer"
                   src={Instagram}
