@@ -37,7 +37,7 @@ function About() {
           <h1 className="p-1 text-xl text-gray-500 md:text-2xl">
             React • JavaScript • HTML5 • CSS3 • BEM • SASS • TaildwindCSS • Ruby
             on Rails • Ruby • PostgreSQL • SQL • Git • GitHub • React Native •
-            WordPress • Elementor
+            WordPress • Elementor • Swift • SwiftUI
           </h1>
         </div>
       </div>
