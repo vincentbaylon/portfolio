@@ -81,10 +81,10 @@ function Contact() {
 
   return (
     <>
-      <div className="h-5/6 flex flex-col py-10 md:py-20">
+      <div className="flex flex-col py-10 h-5/6 md:py-20">
         <h1
           id="contact"
-          className="p-2 my-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white bg-gradient-to-r from-black font-light"
+          className="p-2 my-5 text-3xl font-light text-white sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-black"
         >
           Let's Connect!
         </h1>
@@ -94,7 +94,7 @@ function Contact() {
           </h1>
         </div>
 
-        <div className="flex flex-row justify-evenly m-auto my-5 w-full md:w-1/2">
+        <div className="flex flex-row w-full m-auto my-5 justify-evenly md:w-1/2">
           <img
             className="hover:cursor-pointer"
             src={LinkedIn}
@@ -107,12 +107,12 @@ function Contact() {
             onClick={handleGithub}
             alt="Github logo"
           />
-          <img
+          {/* <img
             className="hover:cursor-pointer"
             src={Twitter}
             onClick={handleTwitter}
             alt="Twitter logo"
-          />
+          /> */}
           {/* <img
                   className="hover:cursor-pointer"
                   src={Instagram}
@@ -122,11 +122,11 @@ function Contact() {
         </div>
 
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="w-full md:w-1/2 p-3 rounded-md bg-gray-500">
+          <div className="w-full p-3 bg-gray-500 rounded-md md:w-1/2">
             <form className="w-full text-black">
-              <div className="mt-2 flex flex-col gap-4 justify-center">
+              <div className="flex flex-col justify-center gap-4 mt-2">
                 <input
-                  className="p-2 h-10 rounded-md"
+                  className="h-10 p-2 rounded-md"
                   id="name"
                   name="name"
                   onChange={handleChange}
@@ -135,7 +135,7 @@ function Contact() {
                   value={formData.name}
                 />
                 <input
-                  className="p-2 h-10 rounded-md"
+                  className="h-10 p-2 rounded-md"
                   id="email"
                   name="email"
                   onChange={handleChange}
@@ -158,7 +158,7 @@ function Contact() {
                     *All fields required
                   </h1>
                   <button
-                    className="border-white border-2 mb-1 text-gray-500 text-md rounded-md py-1 px-4 bg-white hover:bg-gray-500 hover:text-white"
+                    className="px-4 py-1 mb-1 text-gray-500 bg-white border-2 border-white rounded-md text-md hover:bg-gray-500 hover:text-white"
                     type="submit"
                     onClick={handleSubmit}
                   >
