@@ -2,7 +2,6 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import Github from "./github.svg";
 import LinkedIn from "./linkedin.svg";
-import Twitter from "./twitter.svg";
 
 function Contact() {
   const [formData, setFormData] = useState({
