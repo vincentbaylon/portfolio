@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Drawer({ handleClick, isOpen }) {
