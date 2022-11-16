@@ -12,7 +12,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
   };
 
   return (
-    <div className="relative sticky flex justify-center w-full bg-black top-6">
+    <div className="sticky flex justify-center w-full bg-black top-6">
       <header className="absolute top-0 right-0 z-50 flex items-center justify-end p-1 text-2xl font-semibold sm:visible md:invisible">
         <button className="" onClick={handleClick}>
           <motion.div
