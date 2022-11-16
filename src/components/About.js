@@ -31,13 +31,21 @@ function About() {
         </div>
 
         <div className="">
-          <h1 className="text-2xl font-bold text-gray-700 md:text-4xl">
+          <h1 className="pb-2 text-xl font-bold text-gray-700 md:text-2xl">
             Skills
           </h1>
-          <h1 className="p-1 text-xl text-gray-500 md:text-2xl">
-            React • JavaScript • HTML5 • CSS3 • BEM • SASS • TaildwindCSS • Ruby
-            on Rails • Ruby • PostgreSQL • SQL • Git • GitHub • React Native •
-            WordPress • Elementor • SwiftUI
+
+          <h1 className="py-2 text-lg text-gray-700 md:text-xl">
+            ReactJS • JavaScript • HTML5 • CSS3 • SASS • TaildwindCSS • React
+            Native
+          </h1>
+
+          <h1 className="py-2 text-lg text-gray-700 md:text-xl">
+            NextJS • Ruby • Ruby on Rails • PostgreSQL • SQL
+          </h1>
+
+          <h1 className="py-2 text-lg text-gray-700 md:text-xl">
+            Firebase • Sanity • GitHub • WordPress • Elementor
           </h1>
         </div>
       </div>
