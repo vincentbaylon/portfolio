@@ -1,8 +1,5 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import Github from "./github.svg";
-import LinkedIn from "./linkedin.svg";
-import Twitter from "./twitter.svg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -62,23 +59,6 @@ function Contact() {
     }
   };
 
-  const openInNewTab = (url) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
-
-  const handleGithub = () => {
-    openInNewTab("https://github.com/vincentbaylon");
-  };
-
-  const handleLinkedIn = () => {
-    openInNewTab("https://www.linkedin.com/in/vincentbaylon/");
-  };
-
-  const handleTwitter = () => {
-    openInNewTab("https://twitter.com/codingwithVince");
-  };
-
   return (
     <>
       <div className="flex flex-col py-10 h-5/6 md:py-20">
@@ -88,37 +68,11 @@ function Contact() {
         >
           Let's Connect!
         </h1>
-        <div className="flex justify-center mt-6">
-          <h1 className="text-black text-md md:text-xl">
+        <div className="flex justify-center mt-6 mb-4">
+          <h1 className="text-center text-black text-md font-regular md:text-xl">
             Looking for a developer to build your vision or join your team?
+            Contact me!
           </h1>
-        </div>
-
-        <div className="flex flex-row w-full m-auto my-5 justify-evenly md:w-1/2">
-          <img
-            className="hover:cursor-pointer"
-            src={LinkedIn}
-            onClick={handleLinkedIn}
-            alt="Linkedin logo"
-          />
-          <img
-            className="hover:cursor-pointer"
-            src={Github}
-            onClick={handleGithub}
-            alt="Github logo"
-          />
-          <img
-            className="hover:cursor-pointer"
-            src={Twitter}
-            onClick={handleTwitter}
-            alt="Twitter logo"
-          />
-          {/* <img
-                  className="hover:cursor-pointer"
-                  src={Instagram}
-                  onClick={handleInstagram}
-                  alt="Instagram logo"
-               /> */}
         </div>
 
         <div className="flex flex-col items-center justify-center w-full">

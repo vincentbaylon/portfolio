@@ -1,7 +1,6 @@
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { HiOutlineMail } from "react-icons/hi";
 
-function Footer() {
+function BottomFixedContainer() {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -20,8 +19,8 @@ function Footer() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-3 font-light bg-slate-100 text-slate-700">
-      <div className="flex flex-row items-center justify-center visible mb-5 space-x-5 md:invisible">
+    <>
+      <div className="fixed invisible pb-1 space-y-6 bottom-40 left-6 bottom-fixed-left md:visible">
         <div className="cursor-pointer" onClick={handleGithub}>
           <FiGithub
             className="transition-all hover:scale-110 hover:text-rose-500"
@@ -40,23 +39,18 @@ function Footer() {
             size={20}
           />
         </div>
-        <div className="cursor-pointer">
-          <a href="mailto:vincentbaylon@gmail.com">
-            <HiOutlineMail
-              className="transition-all hover:scale-110 hover:text-rose-500"
-              size={20}
-            />
-          </a>
-        </div>
       </div>
 
-      <div className="flex flex-row items-center justify-center w-full md:max-w-6xl">
-        <h1 className="text-md md:text-lg">
-          Designed and coded by Vincent Baylon © 2022{" "}
-        </h1>
+      <div className="fixed invisible font-normal bottom-40 right-6 bottom-fixed-right md:visible">
+        <a
+          className="transition-all hover:font-regular hover:text-rose-500"
+          href={"mailto:vincentbaylon@gmail.com"}
+        >
+          vincentbaylon@gmail.com
+        </a>
       </div>
-    </div>
+    </>
   );
 }
 
-export default Footer;
+export default BottomFixedContainer;

@@ -55,3 +55,32 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.bottom-fixed-left::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #202020;
+  top: 125px;
+  left: 50%;
+  right: 0;
+  z-index: 10;
+}
+
+.bottom-fixed-right {
+  writing-mode: vertical-rl;
+  letter-spacing: 4px;
+}
+
+.bottom-fixed-right::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #202020;
+  top: 285px;
+  left: 0;
+  right: 50%;
+  z-index: 10;
+}
