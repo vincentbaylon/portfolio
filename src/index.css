@@ -57,9 +57,10 @@ img {
 }
 
 .bottom-fixed-left {
-  opacity: 0;
   animation: bottomfade 1s;
   animation-fill-mode: forwards;
+  animation-delay: 2250ms;
+  opacity: 0;
 }
 
 .bottom-fixed-left::after {
@@ -77,9 +78,10 @@ img {
 .bottom-fixed-right {
   writing-mode: vertical-rl;
   letter-spacing: 4px;
-  opacity: 0;
   animation: bottomfade 1s;
   animation-fill-mode: forwards;
+  animation-delay: 2250ms;
+  opacity: 0;
 }
 
 .bottom-fixed-right::after {
