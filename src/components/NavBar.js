@@ -82,7 +82,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
         </header>
       </motion.div>
 
-      {isOpen ? <Drawer handleClick={handleClick} /> : null}
+      <Drawer handleClick={handleClick} isOpen={isOpen} />
     </div>
   );
 }

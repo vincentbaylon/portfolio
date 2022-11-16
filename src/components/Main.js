@@ -69,7 +69,7 @@ function Main({ handleProjectClick }) {
             </div>
           </h1>
           <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-6xl">
-            <div className="flex flex-row py-1">{displayStrTwo}</div>
+            <div className="flex flex-row py-1 -ml-0.5">{displayStrTwo}</div>
           </h1>
         </div>
         <motion.div
