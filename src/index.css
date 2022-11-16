@@ -56,6 +56,12 @@ img {
   justify-content: center;
 }
 
+.bottom-fixed-left {
+  opacity: 0;
+  animation: bottomfade 1s;
+  animation-fill-mode: forwards;
+}
+
 .bottom-fixed-left::after {
   content: "";
   position: absolute;
@@ -71,6 +77,9 @@ img {
 .bottom-fixed-right {
   writing-mode: vertical-rl;
   letter-spacing: 4px;
+  opacity: 0;
+  animation: bottomfade 1s;
+  animation-fill-mode: forwards;
 }
 
 .bottom-fixed-right::after {
@@ -83,4 +92,14 @@ img {
   left: 0;
   right: 50%;
   z-index: 10;
+}
+
+@keyframes bottomfade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
