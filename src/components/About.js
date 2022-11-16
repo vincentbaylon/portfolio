@@ -3,7 +3,7 @@ function About() {
     <div className="flex flex-col py-10 h-5/6 md:py-20">
       <h1
         id="about"
-        className="w-auto p-2 my-5 text-3xl font-light text-white sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-black"
+        className="w-auto p-2 my-5 text-3xl font-light text-white sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-black"
       >
         Get To Know Me
       </h1>

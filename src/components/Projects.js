@@ -19,7 +19,7 @@ function Projects() {
     <div className="flex flex-col gap-2 py-10 md:py-20">
       <h1
         id="projects"
-        className="w-auto p-2 my-5 text-3xl font-light text-right text-white sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-l from-black"
+        className="w-auto p-2 my-5 text-3xl font-light text-right text-white sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-l from-black"
       >
         Projects
       </h1>

@@ -1,5 +1,5 @@
-import { useState } from "react";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 import Github from "./github.svg";
 import LinkedIn from "./linkedin.svg";
 import Twitter from "./twitter.svg";
@@ -84,11 +84,11 @@ function Contact() {
       <div className="flex flex-col py-10 h-5/6 md:py-20">
         <h1
           id="contact"
-          className="p-2 my-5 text-3xl font-light text-white sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-black"
+          className="p-2 my-5 text-3xl font-light text-white sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-black"
         >
           Let's Connect!
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-6">
           <h1 className="text-black text-md md:text-xl">
             Looking for a developer to build your vision or join your team?
           </h1>

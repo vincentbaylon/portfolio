@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import resume from "./Resume.pdf";
 import dev from "./assets/developer.svg";
+import resume from "./Resume.pdf";
 
 function Main({ handleProjectClick }) {
-  const hiMessage = `Hi! I'm Vincent`;
+  const hiMessage = `Hi! I'm Vincent,`;
   const devMessage = "Full-Stack Developer";
 
   let count = 0;
@@ -52,7 +52,7 @@ function Main({ handleProjectClick }) {
     <div className="flex flex-col items-center w-full md:flex-row justify-evenly">
       <div className="flex flex-col py-10 mt-10 h-5/6 md:py-20">
         <div className="">
-          <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-6xl">
+          <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-3xl">
             <div className="flex flex-row py-1">
               {displayStr}
               <motion.div
@@ -65,14 +65,7 @@ function Main({ handleProjectClick }) {
                   duration: 0.3,
                   repeat: false,
                 }}
-              >
-                <motion.div
-                  animate={{ rotate: [0, 75, 0] }}
-                  transition={{ duration: 10, repeat: Infinity }}
-                >
-                  <span className="ml-4">👋</span>
-                </motion.div>
-              </motion.div>
+              ></motion.div>
             </div>
           </h1>
           <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-6xl">
