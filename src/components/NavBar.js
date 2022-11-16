@@ -30,7 +30,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
               className="w-6 h-6"
               fill=""
               viewBox="0 0 20 20"
-              stroke="currentColor"
+              stroke="black"
             >
               <g color="#000">
                 <path
