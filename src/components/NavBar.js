@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 import Drawer from "./Drawer";
 
@@ -12,8 +12,8 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
   };
 
   return (
-    <div className="flex relative w-full justify-center bg-black">
-      <header className="sm:visible md:invisible p-1 flex items-center font-semibold text-2xl absolute top-0 right-0 z-50 justify-end">
+    <div className="relative sticky flex justify-center w-full bg-black top-6">
+      <header className="absolute top-0 right-0 z-50 flex items-center justify-end p-1 text-2xl font-semibold sm:visible md:invisible">
         <button className="" onClick={handleClick}>
           <motion.div
             initial={{ y: -1000 }}
@@ -27,7 +27,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="w-6 h-6"
               fill=""
               viewBox="0 0 20 20"
               stroke="currentColor"
@@ -47,7 +47,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
       </header>
 
       <motion.div
-        className="flex justify-center items-center w-full"
+        className="flex items-center justify-center w-full"
         initial={{ y: -1000 }}
         animate={{ y: 0 }}
         transition={{
@@ -57,23 +57,23 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
           repeat: false,
         }}
       >
-        <header className="invisible md:visible p-2 flex flex-row w-full items-center top-0 z-50 justify-evenly absolute text-md bg-black rounded-md">
+        <header className="absolute top-0 z-50 flex flex-row items-center invisible w-full p-2 bg-black rounded-md md:visible justify-evenly text-md">
           <Link
-            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
+            className="font-semibold text-white hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleAboutClick}
           >
             ABOUT
           </Link>
           <Link
-            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
+            className="font-semibold text-white hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleProjectClick}
           >
             PROJECTS
           </Link>
           <Link
-            className="text-white font-semibold hover:underline hover:underline-offset-2 hover:decoration-rose-500"
+            className="font-semibold text-white hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""
             onClick={handleContactClick}
           >
