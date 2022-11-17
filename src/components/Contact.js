@@ -64,7 +64,7 @@ function Contact() {
       <div className="flex flex-col py-10 h-5/6 md:py-20">
         <h1
           id="contact"
-          className="p-2 my-5 text-3xl font-light text-white sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-black"
+          className="p-2 my-5 text-3xl font-light text-white rounded-md sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-r from-black"
         >
           Let's Connect!
         </h1>
@@ -78,7 +78,7 @@ function Contact() {
         <div className="flex flex-col items-center justify-center w-full">
           <div className="w-full p-3 bg-gray-500 rounded-md md:w-1/2">
             <form className="w-full text-black">
-              <div className="flex flex-col justify-center gap-4 mt-2">
+              <div className="flex flex-col justify-center gap-4 mt-1">
                 <input
                   className="h-10 p-2 rounded-md"
                   id="name"

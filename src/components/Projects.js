@@ -19,7 +19,7 @@ function Projects() {
     <div className="flex flex-col gap-2 py-10 md:py-20">
       <h1
         id="projects"
-        className="w-auto p-2 my-5 text-3xl font-light text-right text-white sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-l from-black"
+        className="w-auto p-2 my-5 text-3xl font-light text-right text-white rounded-md sm:text-2xl md:text-3xl lg:text-4xl bg-gradient-to-l from-black"
       >
         Projects
       </h1>
@@ -33,7 +33,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/room-homepage"
         >
           <img
-            className="object-cover my-2 border-2 border-transparent md:w-1/2 hover:cursor-pointer hover:border-black"
+            className="object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl"
             src={room}
             alt="Room homepage screenshot"
             dataset="https://room-homepage-vb.netlify.app/"
@@ -50,7 +50,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/css-fm-ecommerce"
         >
           <img
-            className="object-cover my-2 border-2 border-transparent md:w-1/2 hover:cursor-pointer hover:border-black"
+            className="object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl"
             src={ecommerce}
             alt="E-commerce screenshot"
             dataset="https://fm-ecommerce-vb.netlify.app/"
@@ -69,7 +69,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/cruelty-free-recipes"
         >
           <img
-            className="object-cover my-2 border-2 border-transparent md:w-1/2 hover:cursor-pointer hover:border-black"
+            className="object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl"
             src={cruelty}
             alt="Cruelty free recipes screenshot"
             dataset="https://crueltyfree.recipes/"
@@ -87,7 +87,7 @@ function Projects() {
           repo="https://github.com/vincentbaylon/phoenix"
         >
           <img
-            className="object-cover my-2 border-2 border-transparent md:w-1/2 hover:cursor-pointer hover:border-black"
+            className="object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl"
             src={phoenix}
             alt="Phoenix fitness screenshot"
             dataset="https://phoenix-fitness.herokuapp.com/"
