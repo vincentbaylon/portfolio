@@ -76,11 +76,11 @@ function Contact() {
         </div>
 
         <div className="flex flex-col items-center justify-center w-full">
-          <div className="w-full p-3 bg-gray-500 rounded-md md:w-1/2">
+          <div className="w-full p-5 bg-gray-500 rounded-md md:w-1/2">
             <form className="w-full text-black">
               <div className="flex flex-col justify-center gap-4 mt-1">
                 <input
-                  className="h-10 p-2 rounded-md"
+                  className="h-10 p-2 rounded-sm"
                   id="name"
                   name="name"
                   onChange={handleChange}
@@ -89,7 +89,7 @@ function Contact() {
                   value={formData.name}
                 />
                 <input
-                  className="h-10 p-2 rounded-md"
+                  className="h-10 p-2 rounded-sm"
                   id="email"
                   name="email"
                   onChange={handleChange}
@@ -98,7 +98,7 @@ function Contact() {
                   value={formData.email}
                 />
                 <textarea
-                  className="p-2 rounded-md"
+                  className="p-2 rounded-sm"
                   id="message"
                   name="message"
                   onChange={handleChange}
@@ -112,7 +112,7 @@ function Contact() {
                     *All fields required
                   </h1>
                   <button
-                    className="px-4 py-1 mb-1 text-gray-500 bg-white border-2 border-white rounded-md text-md hover:bg-gray-500 hover:text-white"
+                    className="px-4 py-1 mb-1 text-gray-500 bg-white border-2 border-white rounded-sm text-md hover:border-gray-400 hover:bg-gray-400 hover:text-white"
                     type="submit"
                     onClick={handleSubmit}
                   >

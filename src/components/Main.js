@@ -85,7 +85,7 @@ function Main({ handleProjectClick }) {
           <div className="flex flex-row gap-1">
             <span className="mx-1 mt-10">
               <button
-                className="px-4 py-2 mb-10 text-gray-500 border-2 border-gray-500 shadow-md text-md rounded-sms hover:bg-gray-500 hover:text-white"
+                className="px-4 py-2 mb-10 text-gray-500 border-2 border-gray-500 rounded-sm shadow-md text-md hover:bg-gray-500 hover:text-white"
                 onClick={handleProjectClick}
               >
                 PROJECTS
