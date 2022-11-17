@@ -98,10 +98,12 @@ img {
 
 @keyframes bottomfade {
   from {
+    color: #f43f5e;
     opacity: 0;
   }
 
   to {
+    color: #202020;
     opacity: 1;
   }
 }

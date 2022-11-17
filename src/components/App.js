@@ -30,7 +30,7 @@ function App() {
         id="top"
         className="flex flex-col items-center justify-center h-full min-h-screen p-2 pt-0 m-0 text-white md:p-5 bg-slate-100"
       >
-        <div className="max-w-full px-5 overflow-y-hidden md:px-12 sm:px-10 lg:max-w-6xl">
+        <div className="max-w-full px-5 md:px-12 sm:px-10 lg:max-w-6xl">
           <NavBar
             handleProjectClick={handleProjectClick}
             handleAboutClick={handleAboutClick}
