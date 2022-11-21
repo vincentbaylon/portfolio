@@ -6,7 +6,7 @@ function About() {
           Get To Know Me
         </h1>
 
-        <div className="grid justify-center grid-cols-1 gap-10 p-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid justify-center grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
           <div className="text-lg text-left 2xl:text-xl">
             <h1 className="font-light text-slate-100">
               I'm a full-stack developer currently located in Las Vegas. I'm
