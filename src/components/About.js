@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="py-20">
+    <div className="md:py-10 lg:py-20">
       <div className="flex flex-col px-8 py-4 my-10 rounded-md bg-slate-900 h-5/6">
         <h1 className="w-auto my-5 text-2xl font-semibold rounded-md text-slate-100 sm:text-2xl md:text-3xl lg:text-4xl about-heading">
           Get To Know Me

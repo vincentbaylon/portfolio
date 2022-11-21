@@ -12,7 +12,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
   };
 
   return (
-    <div className="sticky justify-center w-full m-auto bg-slate-900 top-6">
+    <div className="sticky justify-center w-full m-auto bg-slate-800 top-6">
       <header className="absolute top-0 right-0 z-50 flex items-center justify-end p-1 text-2xl font-semibold sm:visible md:invisible">
         <button className="" onClick={handleClick}>
           <motion.div
@@ -57,7 +57,7 @@ function NavBar({ handleProjectClick, handleAboutClick, handleContactClick }) {
           repeat: false,
         }}
       >
-        <header className="absolute top-0 z-50 flex flex-row items-center invisible w-full p-2 rounded-md bg-slate-900 md:visible justify-evenly text-md">
+        <header className="absolute top-0 z-50 flex flex-row items-center invisible w-full p-2 rounded-md bg-slate-800 md:visible justify-evenly text-md">
           <Link
             className="font-semibold text-white hover:underline hover:underline-offset-2 hover:decoration-rose-500"
             to=""

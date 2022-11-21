@@ -50,9 +50,9 @@ function Main({ handleProjectClick }) {
 
   return (
     <div className="flex flex-col items-center w-full md:flex-row justify-evenly">
-      <div className="flex flex-col py-10 mt-10 h-5/6 md:py-40">
+      <div className="flex flex-col py-10 mt-10 h-5/6 md:py-20 lg:py-40">
         <div className="">
-          <h3 className="text-xl font-medium text-black md:text-4xl lg:text-2xl">
+          <h3 className="text-xl font-medium text-black md:text-xl lg:text-2xl">
             <div className="flex flex-row">
               {displayStr}
               <motion.div
@@ -69,7 +69,7 @@ function Main({ handleProjectClick }) {
             </div>
           </h3>
           <h1 className="text-3xl font-bold text-black md:text-4xl lg:text-6xl">
-            <div className="flex flex-row -ml-0.5 mb-6">{displayStrTwo}</div>
+            <div className="flex flex-row mb-6 -ml-0.5">{displayStrTwo}</div>
           </h1>
 
           <h3 className="z-0 ml-1 text-xl text-black main-subheading">

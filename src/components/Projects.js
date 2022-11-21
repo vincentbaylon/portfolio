@@ -16,12 +16,13 @@ function Projects() {
   };
 
   return (
-    <div className="flex flex-col gap-2 py-10 md:py-20">
+    <div className="flex flex-col gap-2 py-10 md:py-10 lg:py-20">
       <h1
         id="projects"
         className="w-auto p-2 px-4 my-5 text-2xl font-semibold text-left rounded-md text-slate-100 sm:text-2xl md:text-3xl lg:text-4xl bg-slate-900"
       >
-        {"<Projects>"}
+        <span className="text-rose-500">{"<"}</span>Projects
+        <span className="text-rose-500">{">"}</span>
       </h1>
       <div className="grid flex-col grid-cols-1 gap-10 p-1 xl:grid-cols-2">
         <ProjectCard
@@ -99,7 +100,8 @@ function Projects() {
         id="projects"
         className="w-auto p-2 px-4 my-5 text-2xl font-semibold text-left rounded-md text-slate-100 sm:text-2xl md:text-3xl lg:text-4xl bg-slate-900"
       >
-        {"</Projects>"}
+        <span className="text-rose-500">{"</"}</span>Projects
+        <span className="text-rose-500">{">"}</span>
       </h1>
     </div>
   );

@@ -71,7 +71,14 @@ function Contact() {
         <div className="flex justify-center mb-4">
           <h1 className="mb-6 text-center text-slate-900 text-md font-regular md:text-xl">
             Looking for a developer to build your vision or join your team?
-            Contact me!
+            <span className="ml-2 font-regular text-rose-500">
+              <a
+                className="transition-all hover:underline"
+                href={"mailto:vincentbaylon@gmail.com"}
+              >
+                Contact me!
+              </a>
+            </span>
           </h1>
         </div>
 
