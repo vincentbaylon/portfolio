@@ -59,7 +59,7 @@ function Projects() {
         <ProjectCard
           key='Cruelty Free Recipes'
           name='Cruelty Free Recipes'
-          url='https://crueltyfree.recipes/'
+          url=''
           desc='A plant-based recipe site with rating and commenting features for
 					Vegans or those looking to incorporate more plant-based meals into
 					their diets.'
@@ -77,7 +77,7 @@ function Projects() {
         <ProjectCard
           key='Phoenix Fitness'
           name='Phoenix Fitness'
-          url='https://phoenix-fitness.herokuapp.com/'
+          url=''
           desc='A workout and body progress tracker to assist in achieving your
 					fitness goals.'
           tools='React • Ruby on Rails • MUI • PostgreSQL • Firebase'
