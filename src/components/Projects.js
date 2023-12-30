@@ -1,7 +1,7 @@
-import cruelty from './assets/crueltyfreerecipes.png';
+// import cruelty from './assets/crueltyfreerecipes.png';
 import ecommerce from './assets/fmecommerce.png';
 import room from './assets/fmroom.png';
-import phoenix from './assets/phoenixfitness.png';
+// import phoenix from './assets/phoenixfitness.png';
 import ProjectCard from './ProjectCard';
 
 function Projects() {
