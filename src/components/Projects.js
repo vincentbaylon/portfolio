@@ -69,7 +69,7 @@ function Projects() {
             className='object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl'
             src={cruelty}
             alt='Cruelty free recipes screenshot'
-            dataset='https://crueltyfree.recipes/'
+            dataset='https://github.com/vincentbaylon/cruelty-free-recipes'
             onClick={handleLink}
           />
         </ProjectCard>
@@ -86,7 +86,7 @@ function Projects() {
             className='object-cover my-2 border-2 border-transparent rounded-md md:w-1/2 hover:cursor-pointer hover:shadow-xl'
             src={phoenix}
             alt='Phoenix fitness screenshot'
-            dataset='https://phoenix-fitness.herokuapp.com/'
+            dataset='https://github.com/vincentbaylon/cruelty-free-recipes'
             onClick={handleLink}
           />
         </ProjectCard>

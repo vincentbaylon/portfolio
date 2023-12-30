@@ -3,7 +3,7 @@ function ProjectCard({ name, url, img, desc, tools, live, repo, children }) {
     <div className='flex flex-col items-center overflow-hidden text-center'>
       <a
         className='p-2 text-2xl font-semibold text-black hover:underline hover:decoration-rose-500'
-        href={url}
+        href={url === '' ? repo : url}
         target='_blank'
         rel='noreferrer noopener'>
         {name}
